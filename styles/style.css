@@ -19,6 +19,10 @@
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: var(--card__text-weight);
-  background-color: var(--background-color);
+  
   color: var(--accent-color);
+  background-image: var(--gradient);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }

@@ -9,6 +9,9 @@
   --card__title-weight: 700;
   --background-color: #fff;
   --accent-color: #000;
+  --gradient: repeating-linear-gradient(#d3d3d3 2px, rgb(211, 211, 211, 0%) 4px),
+  repeating-linear-gradient(90deg, #d3d3d3 2px, rgb(211, 211, 211, 0%) 4px),
+  linear-gradient(#e7e7e7 0.01%, #1a1a1a);
 }
 
 :root.theme-dark {
@@ -16,12 +19,18 @@
   --card__title-weight: 785;
   --background-color: #000;
   --accent-color: #00CC14;
+  --gradient: repeating-linear-gradient(#000 2px, rgb(0, 0, 0, 0%) 4px),
+  repeating-linear-gradient(90deg, #000 2px, rgb(0, 0, 0, 0%) 4px),
+  linear-gradient(#007f0c, #004306);
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --card__text-weight: 465;
     --card__title-weight: 785;
     --background-color: #000;
-    --accent-color: #00CC14;  
+    --accent-color: #00CC14;
+    --gradient: repeating-linear-gradient(#000 2px, rgb(0, 0, 0, 0%) 4px),
+    repeating-linear-gradient(90deg, #000 2px, rgb(0, 0, 0, 0%) 4px),
+    linear-gradient(#007f0c, #004306);
   }
 }
