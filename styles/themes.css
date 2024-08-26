@@ -22,6 +22,7 @@
   --gradient: repeating-linear-gradient(#000 2px, rgb(0, 0, 0, 0%) 4px),
   repeating-linear-gradient(90deg, #000 2px, rgb(0, 0, 0, 0%) 4px),
   linear-gradient(#007f0c, #004306);
+  --header__background-color: #000; 
 }
 @media (prefers-color-scheme: dark) {
   :root {
