@@ -122,6 +122,40 @@
   font-stretch: 145.5%;
 }
 
+.image__wrapper {
+  position: relative;
+}
+
+.image__label {
+  position: absolute;
+  right: 13px;
+  top: 25px;
+  font-family: var(--accent-font), sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  mix-blend-mode: hard-light;
+  text-shadow:
+  -1px 0 var(--stroke-color), 
+  0 1px var(--stroke-color), 
+  1px 0 var(--stroke-color), 
+  0 -1px var(--stroke-color);
+  opacity: 50%;
+}
+
+@media (width >= 1440px) {
+  .image__label {
+    right: 25px;
+  }
+}
+
+
+@supports((-webkit-text-stroke: 1px #000000)) {
+  .image__label {
+      -webkit-text-stroke: 1px var(--stroke-color);
+      text-shadow: none;
+  }
+} 
+
 .card__image {
   width: 100%;
 }
