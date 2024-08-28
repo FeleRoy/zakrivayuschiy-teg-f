@@ -72,14 +72,36 @@
   font-family: var(--accent-font);
 }
 
+/** Состояния кнопок **/
+
 .theme-menu__button {
   position: relative;
   border: none;
-  padding-left: 27px;
+  margin-left: 27px;
   font-size: 14px;
   text-transform: uppercase;
   background-color: transparent;
+  transition: opacity 0.3s ease;
 }
+
+.theme-menu__button::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.theme-menu__button:focus-visible::after {
+  opacity: 60%;
+  width: 100%;
+}
+
+.theme-menu__button:focus{
+  opacity: 60%;
+  outline: none;
+} 
 
 .theme-menu__button:hover {
   opacity: 60%;
@@ -88,14 +110,31 @@
 
 .theme-menu__button:disabled {
   opacity: 60%;
-  cursor: default;
+  pointer-events: none;
+}
+
+.theme-menu__button:focus {
+  outline: none;
 }
 
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  left: 8px;
+  animation: arrow-move 0.5s ease-in-out infinite;
+  animation-direction: alternate;
 }
+
+@keyframes arrow-move {
+  0% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    transform: translateX(-16px);
+  }
+}
+
+/** Состояния кнопок **/
 
 @media (width >= 1440px) {
   .header {
