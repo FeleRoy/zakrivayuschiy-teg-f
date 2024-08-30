@@ -7,11 +7,11 @@
   --background-color: #fff;
   --accent-color: #000;
   --gradient: repeating-linear-gradient(#d3d3d3 2px, transparent 4px),
-  repeating-linear-gradient(90deg, #d3d3d3 2px, transparent 4px),
-  linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    repeating-linear-gradient(90deg, #d3d3d3 2px, transparent 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --header__background-color: #fff;
   --stroke-color: #fff;
   --button__text-color: #fff;
   --heart__contour-color: #000;
-  --heart__fill-color: #FF0000;
+  --heart__fill-color: #ff0000;
 }
