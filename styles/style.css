@@ -113,10 +113,6 @@
   pointer-events: none;
 }
 
-.theme-menu__button:focus {
-  outline: none;
-}
-
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
@@ -223,6 +219,7 @@
   border: 2px solid var(--accent-color);
   background-color: transparent;
   transition: box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .card__like-button::after {
@@ -235,10 +232,6 @@
   height: 100%;
   background-color: var(--accent-color);
   transition: width 0.3s ease;
-}
-
-.card__like-button {
-  cursor: pointer;
 }
 
 .card__like-button:hover::after {
@@ -268,9 +261,6 @@
   padding: 0;
   background-color: transparent;
   transition: border 0.3s ease;
-}
-
-.card__icon-button {
   cursor: pointer;
 }
 
@@ -413,7 +403,6 @@
   gap: 8px;
   border: 2px solid var(--accent-color);
   padding: 15px;
-  background-color: transparent;
   background-color: var(--background-color);
   transition: box-shadow 0.3s ease;
 }
