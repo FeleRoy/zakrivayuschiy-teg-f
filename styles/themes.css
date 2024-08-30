@@ -42,5 +42,9 @@
     --gradient: repeating-linear-gradient(#000 2px, rgb(0, 0, 0, 0%) 4px),
     repeating-linear-gradient(90deg, #000 2px, rgb(0, 0, 0, 0%) 4px),
     linear-gradient(#007f0c, #004306);
+    --header__background-color: #000; 
+    --stroke-color: #000;
+    --button__text-color: #00CC14;
+    --heart__contour-color: #00CC14;
   }
 }
