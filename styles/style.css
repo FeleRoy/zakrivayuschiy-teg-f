@@ -27,6 +27,12 @@
   font-variation-settings: var(--card__text-weight);
 }
 
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: var(--main-font), sans-serif;
+  }
+}
+
 .header {
   display: flex;
   flex-direction: column;
