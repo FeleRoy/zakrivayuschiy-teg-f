@@ -5,14 +5,19 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 :root.theme-light {
+  --main-font: Inter-Variable;
+  --accent-font: PressStart2P;
   --card__text-weight: 400;
   --card__title-weight: 700;
   --background-color: #fff;
   --accent-color: #000;
-  --gradient: repeating-linear-gradient(#d3d3d3 2px, rgb(211, 211, 211, 0%) 4px),
-  repeating-linear-gradient(90deg, #d3d3d3 2px, rgb(211, 211, 211, 0%) 4px),
+  --gradient: repeating-linear-gradient(#d3d3d3 2px, transparent 4px),
+  repeating-linear-gradient(90deg, #d3d3d3 2px, transparent 4px),
   linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  --header__background-color: #fff;
   --stroke-color: #fff;
+  --button__text-color: #fff;
+  --heart__contour-color: #000;
 }
 
 :root.theme-dark {
@@ -25,6 +30,8 @@
   linear-gradient(#007f0c, #004306);
   --header__background-color: #000; 
   --stroke-color: #000;
+  --button__text-color: #00CC14;
+  --heart__contour-color: #00CC14;
 }
 @media (prefers-color-scheme: dark) {
   :root {
