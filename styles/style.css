@@ -126,16 +126,6 @@
   animation-direction: alternate;
 }
 
-@keyframes arrow-move {
-  0% {
-    transform: translateX(-20px);
-  }
-
-  100% {
-    transform: translateX(-16px);
-  }
-}
-
 /** Состояния кнопок **/
 
 @media (width >= 1440px) {
@@ -196,6 +186,8 @@
 
 .card__image {
   width: 100%;
+  object-fit: cover;
+  object-position: center;
   border-top: 2px solid var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
 }
@@ -217,18 +209,21 @@
   margin-bottom: 23px;
 }
 
-.card__like-button {
+.project-button {
   position: relative;
   display: flex;
-  width: 130px;
-  height: 40px;
   border: 2px solid var(--accent-color);
-  background-color: transparent;
+  background-color: var(--background-color);
   transition: box-shadow 0.3s ease;
   cursor: pointer;
 }
 
-.card__like-button::after {
+.card__like-button {
+  width: 130px;
+  height: 40px;
+}
+
+.project-button::after {
   content: "";
   position: absolute;
   top: 0px;
@@ -240,11 +235,11 @@
   transition: width 0.3s ease;
 }
 
-.card__like-button:hover::after {
+.project-button:hover::after {
   width: 100%;
 }
 
-.card__like-button:focus {
+.project-button:focus {
   box-shadow: 2px 2px var(--accent-color);
   outline: none;
 }
@@ -296,6 +291,10 @@
 }
 
 /**-----------------РАБОТА С СЕРДЦЕМ--------------**/
+
+.heart {
+  transform-origin: center center;
+}
 
 .sparks {
   opacity: 0%;
@@ -359,37 +358,6 @@
   animation: sparks-opacity 0.3s ease-in 0.3s;
 }
 
-@keyframes heart-scale {
-  from {
-    transform: scale(1);
-    transform-origin: center center;
-  }
-
-  50% {
-    transform: scale(1.5);
-    transform-origin: center center;
-  }
-
-  to {
-    transform: scale(1);
-    transform-origin: center center;
-  }
-}
-
-@keyframes sparks-opacity {
-  from {
-    opacity: 0%;
-  }
-
-  50% {
-    opacity: 100%;
-  }
-
-  to {
-    opacity: 0%;
-  }
-}
-
 /**-----------------РАБОТА С СЕРДЦЕМ--------------**/
 
 .button__flex {
@@ -401,37 +369,11 @@
 }
 
 .save__button {
-  position: relative;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border: 2px solid var(--accent-color);
   padding: 15px;
-  background-color: var(--background-color);
-  transition: box-shadow 0.3s ease;
-}
-
-.save__button:focus {
-  box-shadow: 2px 2px var(--accent-color);
-  outline: none;
-}
-
-.save__button::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  display: block;
-  width: 0%;
-  height: 100%;
-  background-color: var(--accent-color);
-  transition: width 0.3s ease;
-}
-
-.save__button:hover::after {
-  width: 100%;
 }
 
 .floppy {
@@ -471,6 +413,10 @@ dialog::backdrop {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .fake_floppy {
