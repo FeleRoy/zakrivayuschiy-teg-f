@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -16,8 +17,8 @@
   </head>
   <body class="page">
     <header class="header">
-      <h1 class="header__title">&lt;/html&gt;</h1>
-      <h2 class="header__title-text">закрывающий тег</h2>
+      <a class="header__title">&lt;/html&gt;</a>
+      <h1 class="header__title-text">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -48,11 +49,11 @@
       <section class="cards">
         <ul class="cards__list">
           <li class="cards__list-item">
-            <h3 class="card__title">
+            <h2 class="card__title">
               Фритрек и нулевой спринт: Подготовка к работе
-            </h3>
+            </h2>
             <div class="image__wrapper">
-              <p class="image__label">&lt;самое начало&gt;</p>
+              <span class="image__label">&lt;самое начало&gt;</span>
               <img
                 src="./images/one.jpg"
                 alt="человек в лесу"
@@ -66,9 +67,10 @@
             </p>
             <p class="card__text">Много сил и мотивации.</p>
             <div class="buttons">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
+                  aria-hidden="true"
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
@@ -109,15 +111,15 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button class="card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </li>
           <li class="cards__list-item">
-            <h3 class="card__title">1 спринт: Я — чистый лист</h3>
+            <h2 class="card__title">1 спринт: Я — чистый лист</h2>
             <div class="image__wrapper">
-              <p class="image__label">&lt;всё с нуля&gt;</p>
+              <span class="image__label">&lt;всё с нуля&gt;</span>
               <img
                 src="./images/two.jpg"
                 alt="рабочий стол"
@@ -133,9 +135,10 @@
             </p>
             <p class="card__text">Первые победы!</p>
             <div class="buttons">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
+                  aria-hidden="true"
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
@@ -176,15 +179,15 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button class="card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </li>
           <li class="cards__list-item">
-            <h3 class="card__title">1 спринт: А если не получится?</h3>
+            <h2 class="card__title">1 спринт: А если не получится?</h2>
             <div class="image__wrapper">
-              <p class="image__label">&lt;радость&gt;</p>
+              <span class="image__label">&lt;радость&gt;</span>
               <img
                 src="./images/three.jpg"
                 alt=""
@@ -198,9 +201,10 @@
             </p>
             <p class="card__text">Ура, скорее бы следующий прокет!</p>
             <div class="buttons">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
+                  aria-hidden="true"
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
@@ -241,15 +245,15 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button class="card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </li>
           <li class="cards__list-item">
-            <h3 class="card__title">2 спринт: Погоня за идеалом</h3>
+            <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
             <div class="image__wrapper">
-              <p class="image__label">&lt;больше нового&gt;</p>
+              <span class="image__label">&lt;больше нового&gt;</span>
               <img
                 src="./images/four.jpg"
                 alt="зимний лес"
@@ -265,9 +269,10 @@
             </p>
             <p class="card__text">Столько всего нового!</p>
             <div class="buttons">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
+                  aria-hidden="true"
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
@@ -308,15 +313,15 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button class="card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </li>
           <li class="cards__list-item">
-            <h3 class="card__title">2 спринт: О тех, кто рядом</h3>
+            <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
             <div class="image__wrapper">
-              <p class="image__label">&lt;все рядом&gt;</p>
+              <span class="image__label">&lt;все рядом&gt;</span>
               <img
                 src="./images/five.jpg"
                 alt="океан"
@@ -335,9 +340,10 @@
               Много людей сталкивались и решали такие же проблемы, как и я.
             </p>
             <div class="buttons">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
+                  aria-hidden="true"
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
@@ -378,15 +384,15 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button class="card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </li>
           <li class="cards__list-item">
-            <h3 class="card__title">3 спринт: Обходные стратегии</h3>
+            <h2 class="card__title">3 спринт: Обходные стратегии</h2>
             <div class="image__wrapper">
-              <p class="image__label">&lt;трудности&gt;</p>
+              <span class="image__label">&lt;трудности&gt;</span>
               <img
                 src="./images/six.jpg"
                 alt="светлый океан"
@@ -400,9 +406,10 @@
             </p>
             <p class="card__text">Ещё больше нового!</p>
             <div class="buttons">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
+                  aria-hidden="true"
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
@@ -443,15 +450,15 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button class="card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </li>
           <li class="cards__list-item">
-            <h3 class="card__title">3 спринт: Когда опускаются руки</h3>
+            <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
             <div class="image__wrapper">
-              <p class="image__label">&lt;много трудностей&gt;</p>
+              <span class="image__label">&lt;много трудностей&gt;</span>
               <img
                 src="./images/seven.jpg"
                 alt="небо"
@@ -469,9 +476,10 @@
               Страх чистого листа и бесконечное откладывание на потом.
             </p>
             <div class="buttons">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
+                  aria-hidden="true"
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
@@ -512,15 +520,15 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button class="card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </li>
           <li class="cards__list-item">
-            <h3 class="card__title">«Сейчас я здесь»</h3>
+            <h2 class="card__title">«Сейчас я здесь»</h2>
             <div class="image__wrapper">
-              <p class="image__label">&lt;сейчас я здесь&gt;</p>
+              <span class="image__label">&lt;сейчас я здесь&gt;</span>
               <img
                 src="./images/eight.jpg"
                 alt="дети играют в мяч"
@@ -539,9 +547,10 @@
               Хочется сдать проект и побыстрее перейти к программированию.
             </p>
             <div class="buttons">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
+                  aria-hidden="true"
                   width="39"
                   height="36"
                   viewBox="0 0 39 36"
@@ -582,7 +591,7 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button class="card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -599,75 +608,8 @@
           <svg
             class="floppy"
             viewBox="0 0 28 28"
-            xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              fill="currentColor"
-              d="M.5 0h2.154v2.154H.5zM.5 2.154h2.154v2.154H.5zM.5 4.308h2.154v2.154H.5zM.5 6.462h2.154v2.154H.5z"
-            />
-            <path
-              fill="currentColor"
-              d="M.5 8.615h2.154v2.154H.5zM.5 10.769h2.154v2.154H.5zM.5 12.923h2.154v2.154H.5zM.5 15.077h2.154v2.154H.5zM.5 17.231h2.154v2.154H.5zM.5 19.385h2.154v2.154H.5z"
-            />
-            <path
-              fill="currentColor"
-              d="M.5 21.538h2.154v2.154H.5zM.5 23.692h2.154v2.154H.5zM.5 25.846h2.154V28H.5zM24.193 0v2.154h-2.154V0z"
-            />
-            <path
-              fill="currentColor"
-              d="M22.04 0v2.154h-2.155V0zM19.884 0v2.154H17.73V0zM17.73 0v2.154h-2.154V0z"
-            />
-            <path
-              fill="currentColor"
-              d="M15.577 0v2.154h-2.154V0zM13.423 0v2.154H11.27V0zM11.27 0v2.154H9.115V0z"
-            />
-            <path
-              fill="currentColor"
-              d="M9.116 0v2.154H6.962V0zM6.96 0v2.154H4.808V0zM4.807 0v2.154H2.653V0zM26.346 2.154v2.154h-2.154V2.154zM6.96 4.308v2.154H4.808V4.308zM6.961 2.154v2.154H4.807V2.154zM6.96 6.462v2.154H4.808V6.462zM22.039 4.308v2.154h-2.154V4.308zM22.04 2.154v2.154h-2.155V2.154zM22.039 6.462v2.154h-2.154V6.462zM17.73 4.307v2.154h-2.154V4.307z"
-            />
-            <path
-              fill="currentColor"
-              d="M17.73 2.154v2.154h-2.153V2.154zM17.73 6.461v2.154h-2.154V6.461zM22.04 8.615v2.154h-2.155V8.615zM19.884 8.615v2.154H17.73V8.615zM17.73 8.615v2.154h-2.153V8.615zM15.577 8.615v2.154h-2.154V8.615zM13.423 8.615v2.154H11.27V8.615zM11.27 8.616v2.154H9.116V8.616zM9.116 8.615v2.154H6.962V8.615zM6.961 8.615v2.154H4.807V8.615zM24.193 15.077v2.154h-2.154v-2.154zM22.039 15.077v2.154h-2.154v-2.154zM19.884 15.077v2.154H17.73v-2.154zM17.73 15.076v2.154h-2.154v-2.154z"
-            />
-            <path
-              fill="currentColor"
-              d="M15.577 15.077v2.154h-2.154v-2.154zM13.423 15.077v2.154h-2.154v-2.154z"
-            />
-            <path fill="currentColor" d="M11.27 15.077v2.154H9.114v-2.154z" />
-            <path
-              fill="currentColor"
-              d="M9.116 15.077v2.154H6.962v-2.154zM6.96 15.077v2.154H4.808v-2.154zM24.192 17.231v2.154h-2.154v-2.154z"
-            />
-            <path
-              fill="currentColor"
-              d="M6.96 17.23v2.155H4.808V17.23zM24.192 19.385v2.154h-2.154v-2.154zM6.96 19.385v2.154H4.808v-2.154zM24.193 21.539v2.154h-2.154v-2.154z"
-            />
-            <path
-              fill="currentColor"
-              d="M6.961 21.538v2.154H4.807v-2.154zM6.961 23.692v2.154H4.807v-2.154zM24.193 23.693v2.154H22.04v-2.154z"
-            />
-            <path fill="currentColor" d="M26.346 25.846V28h-2.154v-2.154z" />
-            <path
-              fill="currentColor"
-              d="M24.193 25.846V28h-2.154v-2.154zM22.039 25.846V28h-2.154v-2.154zM19.884 25.846V28H17.73v-2.154zM17.73 25.845V28h-2.154v-2.154z"
-            />
-            <path
-              fill="currentColor"
-              d="M15.577 25.846V28h-2.154v-2.154zM13.423 25.846V28h-2.154v-2.154z"
-            />
-            <path fill="currentColor" d="M11.27 25.846V28H9.114v-2.154z" />
-            <path
-              fill="currentColor"
-              d="M9.116 25.846V28H6.962v-2.154zM6.96 25.846V28H4.808v-2.154zM4.807 25.846V28H2.653v-2.154zM28.5 28h-2.154v-2.154H28.5zM28.5 25.846h-2.154v-2.154H28.5z"
-            />
-            <path
-              fill="currentColor"
-              d="M28.5 23.693h-2.154v-2.154H28.5zM28.5 21.539h-2.154v-2.154H28.5zM28.5 19.385h-2.154V17.23H28.5zM28.5 17.23h-2.154v-2.154H28.5z"
-            />
-            <path
-              fill="currentColor"
-              d="M28.5 15.077h-2.154v-2.154H28.5zM28.5 12.923h-2.154V10.77H28.5zM28.5 10.77h-2.154V8.616H28.5zM28.5 8.615h-2.154V6.461H28.5zM28.5 6.461h-2.154V4.307H28.5z"
-            />
+          <use href="./svg/floppy.svg#floppy">
           </svg>
           <span class="button__text">Сохранить на память</span>
         </button>
@@ -675,79 +617,10 @@
       <dialog class="dialog" id="dialog-id">
         <div class="dialog__flex">
           <svg
-            class="dialog__floppy"
-            viewBox="0 0 28 28"
-            xmlns="http://www.w3.org/2000/svg"
+          class="dialog__floppy"
+          viewBox="0 0 28 28"
           >
-            <g>
-              <path
-                fill="currentColor"
-                d="M.5 0h2.154v2.154H.5zM.5 2.154h2.154v2.154H.5zM.5 4.308h2.154v2.154H.5zM.5 6.462h2.154v2.154H.5z"
-              />
-              <path
-                fill="currentColor"
-                d="M.5 8.615h2.154v2.154H.5zM.5 10.769h2.154v2.154H.5zM.5 12.923h2.154v2.154H.5zM.5 15.077h2.154v2.154H.5zM.5 17.231h2.154v2.154H.5zM.5 19.385h2.154v2.154H.5z"
-              />
-              <path
-                fill="currentColor"
-                d="M.5 21.538h2.154v2.154H.5zM.5 23.692h2.154v2.154H.5zM.5 25.846h2.154V28H.5zM24.193 0v2.154h-2.154V0z"
-              />
-              <path
-                fill="currentColor"
-                d="M22.04 0v2.154h-2.155V0zM19.884 0v2.154H17.73V0zM17.73 0v2.154h-2.154V0z"
-              />
-              <path
-                fill="currentColor"
-                d="M15.577 0v2.154h-2.154V0zM13.423 0v2.154H11.27V0zM11.27 0v2.154H9.115V0z"
-              />
-              <path
-                fill="currentColor"
-                d="M9.116 0v2.154H6.962V0zM6.96 0v2.154H4.808V0zM4.807 0v2.154H2.653V0zM26.346 2.154v2.154h-2.154V2.154zM6.96 4.308v2.154H4.808V4.308zM6.961 2.154v2.154H4.807V2.154zM6.96 6.462v2.154H4.808V6.462zM22.039 4.308v2.154h-2.154V4.308zM22.04 2.154v2.154h-2.155V2.154zM22.039 6.462v2.154h-2.154V6.462zM17.73 4.307v2.154h-2.154V4.307z"
-              />
-              <path
-                fill="currentColor"
-                d="M17.73 2.154v2.154h-2.153V2.154zM17.73 6.461v2.154h-2.154V6.461zM22.04 8.615v2.154h-2.155V8.615zM19.884 8.615v2.154H17.73V8.615zM17.73 8.615v2.154h-2.153V8.615zM15.577 8.615v2.154h-2.154V8.615zM13.423 8.615v2.154H11.27V8.615zM11.27 8.616v2.154H9.116V8.616zM9.116 8.615v2.154H6.962V8.615zM6.961 8.615v2.154H4.807V8.615zM24.193 15.077v2.154h-2.154v-2.154zM22.039 15.077v2.154h-2.154v-2.154zM19.884 15.077v2.154H17.73v-2.154zM17.73 15.076v2.154h-2.154v-2.154z"
-              />
-              <path
-                fill="currentColor"
-                d="M15.577 15.077v2.154h-2.154v-2.154zM13.423 15.077v2.154h-2.154v-2.154z"
-              />
-              <path fill="currentColor" d="M11.27 15.077v2.154H9.114v-2.154z" />
-              <path
-                fill="currentColor"
-                d="M9.116 15.077v2.154H6.962v-2.154zM6.96 15.077v2.154H4.808v-2.154zM24.192 17.231v2.154h-2.154v-2.154z"
-              />
-              <path
-                fill="currentColor"
-                d="M6.96 17.23v2.155H4.808V17.23zM24.192 19.385v2.154h-2.154v-2.154zM6.96 19.385v2.154H4.808v-2.154zM24.193 21.539v2.154h-2.154v-2.154z"
-              />
-              <path
-                fill="currentColor"
-                d="M6.961 21.538v2.154H4.807v-2.154zM6.961 23.692v2.154H4.807v-2.154zM24.193 23.693v2.154H22.04v-2.154z"
-              />
-              <path fill="currentColor" d="M26.346 25.846V28h-2.154v-2.154z" />
-              <path
-                fill="currentColor"
-                d="M24.193 25.846V28h-2.154v-2.154zM22.039 25.846V28h-2.154v-2.154zM19.884 25.846V28H17.73v-2.154zM17.73 25.845V28h-2.154v-2.154z"
-              />
-              <path
-                fill="currentColor"
-                d="M15.577 25.846V28h-2.154v-2.154zM13.423 25.846V28h-2.154v-2.154z"
-              />
-              <path fill="currentColor" d="M11.27 25.846V28H9.114v-2.154z" />
-              <path
-                fill="currentColor"
-                d="M9.116 25.846V28H6.962v-2.154zM6.96 25.846V28H4.808v-2.154zM4.807 25.846V28H2.653v-2.154zM28.5 28h-2.154v-2.154H28.5zM28.5 25.846h-2.154v-2.154H28.5z"
-              />
-              <path
-                fill="currentColor"
-                d="M28.5 23.693h-2.154v-2.154H28.5zM28.5 21.539h-2.154v-2.154H28.5zM28.5 19.385h-2.154V17.23H28.5zM28.5 17.23h-2.154v-2.154H28.5z"
-              />
-              <path
-                fill="currentColor"
-                d="M28.5 15.077h-2.154v-2.154H28.5zM28.5 12.923h-2.154V10.77H28.5zM28.5 10.77h-2.154V8.616H28.5zM28.5 8.615h-2.154V6.461H28.5zM28.5 6.461h-2.154V4.307H28.5z"
-              />
-            </g>
+            <use href="./svg/floppy.svg#floppy">
           </svg>
           <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
         </div>
