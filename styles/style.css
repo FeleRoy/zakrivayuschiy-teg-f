@@ -51,7 +51,7 @@
 
 .header__title {
   color: var(--accent-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-transform: uppercase;
 }
@@ -59,7 +59,7 @@
 .header__title-text {
   margin-bottom: 2px;
   color: var(--accent-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
 }
@@ -75,7 +75,7 @@
   flex-direction: column;
   gap: 6px;
   margin-bottom: 20px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
 }
 
 /** Состояния кнопок **/
@@ -147,7 +147,7 @@
   padding-top: 6px;
   padding-right: 10px;
   padding-left: 10px;
-  font-weight: var(--card__title-weight);
+  font-variation-settings: 'wght' var(--card__title-weight);
   font-size: 18px;
   line-height: 21.78px;
   font-stretch: 145.5%;
@@ -163,7 +163,7 @@
   right: 13px;
   z-index: 1;
   opacity: 50%;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-weight: 400;
   font-size: 14px;
   text-shadow: -1px 0 var(--stroke-color), 0 1px var(--stroke-color),
@@ -196,7 +196,7 @@
   padding: 25px;
   padding-right: 48px;
   padding-bottom: 0px;
-  font-weight: var(--card__text-weight);
+  font-variation-settings: 'wght' var(--card__text-weight);
   line-height: 21px;
 }
 
@@ -249,7 +249,7 @@
   z-index: 1;
   margin: auto;
   color: var(--button__text-color);
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-weight: 400;
   font-size: 14px;
   mix-blend-mode: difference;
@@ -398,7 +398,7 @@
   padding-right: 10px;
   padding-bottom: 30px;
   color: var(--accent-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
