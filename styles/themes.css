@@ -39,7 +39,10 @@
     --card__title-weight: 785;
     --background-color: #000;
     --accent-color: #00cc14;
-    --gradient: repeating-linear-gradient(#000 0px 2px, rgb(0, 0, 0, 0%) 2px 4px),
+    --gradient: repeating-linear-gradient(
+        #000 0px 2px,
+        rgb(0, 0, 0, 0%) 2px 4px
+      ),
       repeating-linear-gradient(90deg, #000 0px 2px, rgb(0, 0, 0, 0%) 2px 4px),
       linear-gradient(#007f0c, #004306);
     --header__background-color: #000;
